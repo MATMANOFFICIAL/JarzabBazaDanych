@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug HelloQt (MSVC)",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/release/hello.exe",
+        "args": [],
+        "cwd": "${workspaceFolder}",
+        "preLaunchTask": "Build Project"
+      }
+    ]
+  }
+  
