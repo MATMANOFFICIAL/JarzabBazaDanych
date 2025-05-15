@@ -17,7 +17,6 @@
 #include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTimeEdit>
 
 QT_BEGIN_NAMESPACE
@@ -36,7 +35,6 @@ public:
     QLineEdit *iloscpasazerowbox;
     QLineEdit *dodinfobox;
     QLabel *label_5;
-    QPushButton *dodajguzik;
 
     void setupUi(QDialog *Dialog)
     {
@@ -45,7 +43,7 @@ public:
         Dialog->resize(347, 304);
         okanulujguzik = new QDialogButtonBox(Dialog);
         okanulujguzik->setObjectName("okanulujguzik");
-        okanulujguzik->setGeometry(QRect(0, 260, 341, 32));
+        okanulujguzik->setGeometry(QRect(-10, 260, 341, 32));
         okanulujguzik->setOrientation(Qt::Orientation::Horizontal);
         okanulujguzik->setStandardButtons(QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok);
         nazwaklientabox = new QLineEdit(Dialog);
@@ -80,9 +78,6 @@ public:
         label_5 = new QLabel(Dialog);
         label_5->setObjectName("label_5");
         label_5->setGeometry(QRect(20, 190, 131, 16));
-        dodajguzik = new QPushButton(Dialog);
-        dodajguzik->setObjectName("dodajguzik");
-        dodajguzik->setGeometry(QRect(90, 270, 75, 24));
 
         retranslateUi(Dialog);
         QObject::connect(okanulujguzik, &QDialogButtonBox::accepted, Dialog, qOverload<>(&QDialog::accept));
@@ -99,7 +94,6 @@ public:
         label_3->setText(QCoreApplication::translate("Dialog", "Godzina Wyjazdu", nullptr));
         label_4->setText(QCoreApplication::translate("Dialog", "Ilosc Pasazerow", nullptr));
         label_5->setText(QCoreApplication::translate("Dialog", "Dodatkowe Informacje ", nullptr));
-        dodajguzik->setText(QCoreApplication::translate("Dialog", "dodaj", nullptr));
     } // retranslateUi
 
 };

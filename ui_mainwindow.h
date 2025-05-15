@@ -31,8 +31,6 @@ public:
     QPushButton *wszystkietrasyguzik;
     QPushButton *dodajtraseguzik;
     QTableWidget *tabela;
-    QPushButton *usuntraseguzik;
-    QPushButton *edytujtraseguzik;
     QMenuBar *menubar;
     QMenu *menuJarzabBazaDanych_v1;
     QStatusBar *statusbar;
@@ -56,12 +54,7 @@ public:
         tabela = new QTableWidget(centralwidget);
         tabela->setObjectName("tabela");
         tabela->setGeometry(QRect(30, 30, 781, 401));
-        usuntraseguzik = new QPushButton(centralwidget);
-        usuntraseguzik->setObjectName("usuntraseguzik");
-        usuntraseguzik->setGeometry(QRect(540, 480, 121, 51));
-        edytujtraseguzik = new QPushButton(centralwidget);
-        edytujtraseguzik->setObjectName("edytujtraseguzik");
-        edytujtraseguzik->setGeometry(QRect(670, 480, 121, 51));
+        tabela->setContextMenuPolicy(Qt::ContextMenuPolicy::CustomContextMenu);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -86,8 +79,6 @@ public:
         dzisiejszetrasyguzik->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl Dzisiejsze Trasy", nullptr));
         wszystkietrasyguzik->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl Wszystkie Trasy", nullptr));
         dodajtraseguzik->setText(QCoreApplication::translate("MainWindow", "Dodaj Tras\304\231", nullptr));
-        usuntraseguzik->setText(QCoreApplication::translate("MainWindow", "Usu\305\204 Tras\304\231", nullptr));
-        edytujtraseguzik->setText(QCoreApplication::translate("MainWindow", "Edytuj  Tras\304\231", nullptr));
         menuJarzabBazaDanych_v1->setTitle(QCoreApplication::translate("MainWindow", "JarzabBazaDanych", nullptr));
     } // retranslateUi
 

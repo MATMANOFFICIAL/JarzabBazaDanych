@@ -62,31 +62,8 @@
       <height>401</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QPushButton" name="usuntraseguzik">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>480</y>
-      <width>121</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Usuń Trasę</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="edytujtraseguzik">
-    <property name="geometry">
-     <rect>
-      <x>670</x>
-      <y>480</y>
-      <width>121</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Edytuj  Trasę</string>
+    <property name="contextMenuPolicy">
+     <enum>Qt::ContextMenuPolicy::CustomContextMenu</enum>
     </property>
    </widget>
   </widget>
