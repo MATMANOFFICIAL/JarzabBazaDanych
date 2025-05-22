@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>optionswindow</class>
+ <widget class="QDialog" name="optionswindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Wybierz Co chcesz wyświetlić </string>
+  </property>
+  <widget class="QPushButton" name="sredniapasazerowguzik">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Średnia ilość pasażerów</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="medianailoscpasazerowguzik">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mediana ilości pasażerów</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sredniaprzejazdowmiesiacguzik">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Średnia ilość przejazdów na miesiąc</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="najczestszyklientguzik">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Najczęstszy klient</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="najmniejpasazerowguzik">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Przejazd z najmniejszą ilością pasażerów</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pasazerowienamiesiac">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ilość pasażerów na miesiac</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="wlasnequeryguzik">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>270</y>
+     <width>111</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Wyślij</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="sqlquerybox">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>240</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Wpisz własne zapytanie SQL:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

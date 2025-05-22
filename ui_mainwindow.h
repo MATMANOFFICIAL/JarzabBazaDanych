@@ -13,12 +13,14 @@
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -31,6 +33,10 @@ public:
     QPushButton *wszystkietrasyguzik;
     QPushButton *dodajtraseguzik;
     QTableWidget *tabela;
+    QTextEdit *aitextbox;
+    QPushButton *aiguzik;
+    QLabel *ailabel;
+    QPushButton *opcjeguzik;
     QMenuBar *menubar;
     QMenu *menuJarzabBazaDanych_v1;
     QStatusBar *statusbar;
@@ -44,17 +50,29 @@ public:
         centralwidget->setObjectName("centralwidget");
         dzisiejszetrasyguzik = new QPushButton(centralwidget);
         dzisiejszetrasyguzik->setObjectName("dzisiejszetrasyguzik");
-        dzisiejszetrasyguzik->setGeometry(QRect(190, 480, 151, 51));
+        dzisiejszetrasyguzik->setGeometry(QRect(180, 450, 151, 51));
         wszystkietrasyguzik = new QPushButton(centralwidget);
         wszystkietrasyguzik->setObjectName("wszystkietrasyguzik");
-        wszystkietrasyguzik->setGeometry(QRect(20, 480, 151, 51));
+        wszystkietrasyguzik->setGeometry(QRect(30, 450, 151, 51));
         dodajtraseguzik = new QPushButton(centralwidget);
         dodajtraseguzik->setObjectName("dodajtraseguzik");
-        dodajtraseguzik->setGeometry(QRect(410, 480, 121, 51));
+        dodajtraseguzik->setGeometry(QRect(30, 500, 151, 51));
         tabela = new QTableWidget(centralwidget);
         tabela->setObjectName("tabela");
-        tabela->setGeometry(QRect(30, 30, 781, 401));
+        tabela->setGeometry(QRect(30, 20, 781, 401));
         tabela->setContextMenuPolicy(Qt::ContextMenuPolicy::CustomContextMenu);
+        aitextbox = new QTextEdit(centralwidget);
+        aitextbox->setObjectName("aitextbox");
+        aitextbox->setGeometry(QRect(340, 490, 341, 81));
+        aiguzik = new QPushButton(centralwidget);
+        aiguzik->setObjectName("aiguzik");
+        aiguzik->setGeometry(QRect(690, 500, 121, 51));
+        ailabel = new QLabel(centralwidget);
+        ailabel->setObjectName("ailabel");
+        ailabel->setGeometry(QRect(340, 430, 481, 61));
+        opcjeguzik = new QPushButton(centralwidget);
+        opcjeguzik->setObjectName("opcjeguzik");
+        opcjeguzik->setGeometry(QRect(180, 500, 151, 51));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -79,6 +97,9 @@ public:
         dzisiejszetrasyguzik->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl Dzisiejsze Trasy", nullptr));
         wszystkietrasyguzik->setText(QCoreApplication::translate("MainWindow", "Wy\305\233wietl Wszystkie Trasy", nullptr));
         dodajtraseguzik->setText(QCoreApplication::translate("MainWindow", "Dodaj Tras\304\231", nullptr));
+        aiguzik->setText(QCoreApplication::translate("MainWindow", "Wy\305\233lij", nullptr));
+        ailabel->setText(QCoreApplication::translate("MainWindow", "Text2SQL: Tu wpisz co chcesz wy\305\233wietli\304\207 i wci\305\233nij Wy\305\233lij", nullptr));
+        opcjeguzik->setText(QCoreApplication::translate("MainWindow", "Inne opcje", nullptr));
         menuJarzabBazaDanych_v1->setTitle(QCoreApplication::translate("MainWindow", "JarzabBazaDanych", nullptr));
     } // retranslateUi
 
